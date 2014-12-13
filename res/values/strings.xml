@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">标 点</string>
+    <string name="imgStoreDir">superscript</string>
+    <string name="back">返回</string>
+    <string name="redo">重选</string>
+    <string name="title">标•点</string>
+    <string name="ad_banner_id">ca-app-pub-5456506892224034/2184181500</string>
+    <string name="ad_interstitle_id">ca-app-pub-5456506892224034/1719849906</string>
+    <string name="developed_by">Developed By 慕容渊</string>
+</resources>
