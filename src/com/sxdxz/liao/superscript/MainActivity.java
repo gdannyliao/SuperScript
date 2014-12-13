@@ -33,7 +33,6 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
-import com.xiaomi.market.sdk.XiaomiUpdateAgent;
 
 public class MainActivity extends Activity {
 
@@ -66,8 +65,6 @@ public class MainActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		XiaomiUpdateAgent.setCheckUpdateOnlyWifi(true);
-		XiaomiUpdateAgent.update(this);
 		setContentView(R.layout.activity_main);
 
 		imageDirectoryPath = Environment.getExternalStorageDirectory()
@@ -174,7 +171,7 @@ public class MainActivity extends Activity {
 			loadImgBtn.setVisibility(View.VISIBLE);
 		}
 
-		
+
 		if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK
 				&& null != data) {
 			Uri uri = data.getData();
